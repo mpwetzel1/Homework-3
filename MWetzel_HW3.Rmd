@@ -1,0 +1,35 @@
+---
+title: "HW3 2018"
+author: "Martha Wetzel"
+date: "2/21/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Homework 3
+
+1. Document installed packages.  
+The version of `dada2` is `r library(dada2); packageVersion("dada2")`.  
+The version of `phyloseq` is `r library("phyloseq"); packageVersion("phyloseq")`.  
+The version of `ShortRead` is `r library("ShortRead"); packageVersion("ShortRead")`.  
+The version of `ggplot2` is `r library("ggplot2"); packageVersion("ggplot2")`. 
+
+
+2. Download files
+
+The following files were downloaded:
+```{R}
+path <- "/Users/marthawetzel/Desktop/Emory/04_Spring 2018/NRSG 741/Homework-3"
+filesseq1 <- list.files(path)
+filesseq1
+
+path2 <- "/Users/marthawetzel/Desktop/Emory/04_Spring 2018/NRSG 741/Homework-3/MiSeq_SOP"
+filesseq2 <- list.files(path2)
+filesseq2
+
+```
+
